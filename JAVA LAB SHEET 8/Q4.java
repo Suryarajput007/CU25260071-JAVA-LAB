@@ -1,0 +1,15 @@
+public class Q4 {
+    static class Pair<T, U> {                                      // two type parameters
+        private T first;
+        private U second;
+        Pair(T first, U second) { this.first = first; this.second = second; }
+        T getFirst() { return first; }
+        U getSecond() { return second; }
+    }
+
+    public static void main(String[] args) {
+        Pair<Integer, String> emp = new Pair<>(1, "Amit");
+        System.out.println("Employee ID  : " + emp.getFirst());
+        System.out.println("Employee Name: " + emp.getSecond());
+    }
+}
